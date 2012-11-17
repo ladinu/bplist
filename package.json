@@ -1,20 +1,29 @@
 {
   "name": "bplist",
-  "version": "0.0.1",
-  "description": "Binary plist parser and creator.",
+  "version": "0.0.0",
+  "description": "Binary plist parser and creator",
   "main": "bplist.js",
-  "keywords": [
-    "bplist",
-    "plist",
-    "binary plist",
-    "binary plist parser",
-    "binary plist creator"
-  ],
-  "author": "Ladinu Chandrasinghe <ladinu@gmail.com>",
-  "license": "MIT",
+  "dependencies": {
+    "bplist-parser": "~0.0.4",
+    "node-bplist-creator": "~0.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/ladinu/bplist.git"
   },
-  "dependencies": {"node-bplist-creator":"~0.0.1", "bplist-parser":"~0.0.4"},
+  "keywords": [
+    "bplist",
+    "bplist parser",
+    "binary plist",
+    "plist",
+    "binary plist parser",
+    "bplist parser"
+  ],
+  "author": "Ladinu Chandrasinghe <ladinu@gmail.com>",
+  "license": "MIT",
+  "readmeFilename": "README.md"
 }
