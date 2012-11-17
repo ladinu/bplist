@@ -14,14 +14,16 @@ $ npm install bplist
 var bplist = require('bplist');
 
 // Create a binary plist
-plistBuf = bplist.create({
+var plistBuf = bplist.create({
     key1: ['v', 'a', 'l', 'u', 'e']
   , key2: 'value2'
 });
 
 
 // Parse a binary plist from a buffer
-bplist.parseBuffer(plistBuf); // [{key: ['v', 'a', 'l', 'u', 'e'], key2: 'value2'}]
+var object = bplist.parseBuffer(plistBuf);
+console.log(object);
+// [{key1: ['v', 'a', 'l', 'u', 'e'], key2: 'value2'}]
 
 
 // Parse a binary plist from a file
