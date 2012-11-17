@@ -1,0 +1,20 @@
+{
+  "name": "bplist",
+  "version": "0.0.1",
+  "description": "Binary plist parser and creator.",
+  "main": "bplist.js",
+  "keywords": [
+    "bplist",
+    "plist",
+    "binary plist",
+    "binary plist parser",
+    "binary plist creator"
+  ],
+  "author": "Ladinu Chandrasinghe <ladinu@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ladinu/bplist.git"
+  },
+  "dependencies": {"node-bplist-creator":"~0.0.1", "bplist-parser":"~0.0.4"},
+}
