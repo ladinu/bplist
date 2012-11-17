@@ -8,13 +8,29 @@ Binary plist parser and creator. This module is entierly dependant on `bplist-pa
 $ npm install bplist
 ```
 
-## Quick Example
+## Examples
 
 ```javascript
 var bplist = require('bplist');
-var plist = bplist.create({key: ['v', 'a', 'l', 'u', 'e']});
 
-bplist.parseBuffer(plist); // [{key: ['v', 'a', 'l', 'u', 'e']}]
+// Create a binary plist
+plistBuf = bplist.create({
+    key1: ['v', 'a', 'l', 'u', 'e']
+  , key2: 'value2'
+});
+
+
+// Parse a binary plist from a buffer
+bplist.parseBuffer(plistBuf); // [{key: ['v', 'a', 'l', 'u', 'e'], key2: 'value2'}]
+
+
+// Parse a binary plist from a file
+bplist.parseFile('nameOf.bplist', function(err, object) {
+  if (err) {
+    // Handle err
+  }
+  console.log(object);
+});
 ```
 
 ## License
