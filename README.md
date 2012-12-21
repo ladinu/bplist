@@ -21,30 +21,16 @@ var plistBuf = bplist.create({
 
 
 // Parse a binary plist from a buffer
-var object;
 bplist.parseBuffer(plistBuf, function(err, result) {
-  if (err) {
-    // Handle error
-    console.log(err);
-  }
-  else {
-    object = result;
-  }
+  if (!err)
+    console.log(result); // [{key1: ['v', 'a', 'l', 'u', 'e'], key2: 'value2'}]
 });
-
-console.log(object);
-// [{key1: ['v', 'a', 'l', 'u', 'e'], key2: 'value2'}]
 
 
 // Parse a binary plist from a file
 bplist.parseFile('nameOf.bplist', function(err, object) {
-  if (err) {
-    // Handle err
-    console.log(err);
-  }
-  else {
+  if (!err)
     console.log(object);
-  }
 });
 ```
 
