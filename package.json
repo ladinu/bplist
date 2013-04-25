@@ -1,11 +1,11 @@
 {
   "name": "bplist",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Binary plist parser and creator",
   "main": "bplist.js",
   "dependencies": {
     "bplist-parser": "~0.0.4",
-    "node-bplist-creator": "~0.0.1"
+    "node-bplist-creator": "~0.0.2"
   },
   "devDependencies": {},
   "scripts": {
