@@ -1,5 +1,5 @@
 var bplistParser  = require('bplist-parser');
-var bplistCreator = require('node-bplist-creator');
+var bplistCreator = require('bplist-creator');
 
 // Expose bplist parser
 exports.maxObjectSize = bplistParser.maxObjectSize;
