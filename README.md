@@ -1,6 +1,7 @@
-[1](https://npmjs.org/package/bplist-parser)
-[2](https://npmjs.org/package/bplist-creator)
-[3](https://github.com/joeferner)
+[1]: https://npmjs.org/package/bplist-parser
+[2]: https://npmjs.org/package/bplist-creator
+[3]: https://github.com/joeferner
+
 bplist
 =============
 Binary plist parser and creator. This module is entierly dependant on [bplist-parser][1] and [bplist-creator][2] written by [joeferner][3].
