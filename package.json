@@ -5,7 +5,7 @@
   "main": "bplist.js",
   "dependencies": {
     "bplist-parser": "~0.0.4",
-    "node-bplist-creator": "~0.0.2"
+    "bplist-creator": "~0.0.2"
   },
   "devDependencies": {},
   "scripts": {
