@@ -19,15 +19,15 @@ var bplist = require('bplist');
 
 // Create a binary plist
 var plistBuf = bplist.create({
-    key1: ['v', 'a', 'l', 'u', 'e']
-  , key2: 'value2'
+    'key1': ['v', 'a', 'l', 'u', 'e']
+  , 'key2': 'value2'
 });
 
 
 // Parse a binary plist from a buffer
 bplist.parseBuffer(plistBuf, function(err, result) {
   if (!err)
-    console.log(result); // [{key1: ['v', 'a', 'l', 'u', 'e'], key2: 'value2'}]
+    console.log(result); // [{'key1': ['v', 'a', 'l', 'u', 'e'], 'key2': 'value2'}]
 });
 
 
